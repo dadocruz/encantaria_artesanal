@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-creme text-marrom antialiased;
+    background-image:
+      radial-gradient(
+        circle at 15% 10%,
+        rgba(232, 183, 183, 0.18),
+        transparent 40%
+      ),
+      radial-gradient(
+        circle at 85% 0%,
+        rgba(201, 154, 74, 0.12),
+        transparent 38%
+      );
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-rosa-claro text-vinho;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
